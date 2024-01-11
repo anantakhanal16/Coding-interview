@@ -1,0 +1,14 @@
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\bin\Debug\net6.0\forCodinginterviews.exe
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\bin\Debug\net6.0\forCodinginterviews.deps.json
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\bin\Debug\net6.0\forCodinginterviews.runtimeconfig.json
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\bin\Debug\net6.0\forCodinginterviews.dll
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\bin\Debug\net6.0\forCodinginterviews.pdb
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.AssemblyInfoInputs.cache
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.AssemblyInfo.cs
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.csproj.CoreCompileInputs.cache
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.dll
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\refint\forCodinginterviews.dll
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.pdb
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.genruntimeconfig.cache
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\ref\forCodinginterviews.dll
