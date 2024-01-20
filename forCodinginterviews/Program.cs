@@ -1,16 +1,31 @@
-﻿using forCodinginterviews;
-using System.Text;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
+        Console.Write("Enter a string: ");
+        string inputString = Console.ReadLine();
 
+        string longestWord = FindLongestWord(inputString);
 
-        int number = 10;
+        Console.WriteLine("The longest word is: " + longestWord);
+    }
 
-        var fiboArray = ForPratice.fibonacciSeries(number);
-      
+    static string FindLongestWord(string input)
+    {
+        string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
+        string longestWord = "";
+
+        foreach (var word in words)
+        {
+            if (word.Length > longestWord.Length)
+            {
+                longestWord = word;
+            }
+        }
+
+        return longestWord;
     }
 }

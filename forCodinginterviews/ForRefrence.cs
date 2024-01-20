@@ -17,11 +17,10 @@ namespace forCodinginterviews
             {
                 for (int j = i + 1; j <= input.Length; j++)
                 {
-
-
                     var startrange = i;
                     var endrange = j - 1;
                     var Outstring = input.Substring(i, j - i);
+
                     Console.WriteLine(input.Substring(i, j - i));
                 }
             }

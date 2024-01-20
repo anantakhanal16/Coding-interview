@@ -12,3 +12,4 @@ C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews
 C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.pdb
 C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.genruntimeconfig.cache
 C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\ref\forCodinginterviews.dll
+C:\Users\saruk\Desktop\Coding interviews\forCodinginterviews\forCodinginterviews\obj\Debug\net6.0\forCodinginterviews.sourcelink.json

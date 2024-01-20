@@ -1,4 +1,8 @@
-﻿///solve 
+﻿///Very common Asked Questions must do for preparing interviews
+
+
+
+///solve 
 /// string based
 /// maximum substring for the given string
 /// reverse array 
@@ -100,23 +104,6 @@ namespace forCodinginterviews
         }
 
         ///reverse string 
-        ///
-
-        //public static string ReverseString(string inputString)
-        //{
-        //    string reversedString= "";
-
-
-        //    char[] charray = inputString.ToCharArray();
-
-        //    Array.Reverse(charray);
-
-        //    string newArray = new string(charray);
-
-        //    return newArray;
-
-        //}
-
         ///
         public static string reverseString(string inputString)
         {
@@ -262,5 +249,113 @@ namespace forCodinginterviews
             return fibonacciArray;
 
         }
+
+        //remove duplicate character from string .
+        public static string removeDuplicateCharacter(string inputString)
+        {
+            HashSet<char> seenCharacter = new HashSet<char>();
+
+            string result = "";
+
+            foreach(char c in inputString)
+            {
+                if (seenCharacter.Add(c))
+                {
+                    result += c;
+                }
+
+            }
+            return result;
+
+        }
+
+        ///count the word
+        public static int countnoOfwords(string inputString)
+        {
+            string[] words = inputString.Split(new char[] { ' ','\t','\n' });
+            
+            return words.Length;
+        }
+        
+        //max occurance of character
+        public static string maximumOccuranceofCharacter()
+       {
+            string inputString = "hello it is a great day";
+
+            Dictionary<char, int> characterCount = new Dictionary<char, int>();
+
+            foreach (char c in inputString)
+            {
+                if (characterCount.ContainsKey(c))
+                {
+                    characterCount[c]++;
+
+                }
+                else 
+                {
+                    characterCount.Add(c, 1);
+                }
+                
+            }
+            var OrderCharacterCount = characterCount.ToList().OrderByDescending(c => c.Value);
+
+            char maxOccuringcharacter = OrderCharacterCount.First().Key;
+            int TotalCount = OrderCharacterCount.First().Value;
+
+            string result = $"{maxOccuringcharacter}{TotalCount}";
+
+            return result;
+       }
+
+        ///check string is palindeome
+        ///
+        public static bool PalindromeString()
+        {
+            string original = "hello";
+
+            char[]  charArray  = original.ToCharArray();
+
+             Array.Reverse(charArray);
+
+            string reversedString = new string(charArray);
+
+            if (original.Equals(reversedString))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        //check string is anagram 
+        public static bool IsAnagram(string str1 , string str2)
+        {
+            char[] string1 = str1.ToCharArray();
+            char[] string2 = str2.ToCharArray();
+
+            Array.Sort(string1);
+            Array.Sort(string2);
+
+           string sortedString1 = new string(string1);
+
+           string sortedString2 = new string(string2);
+
+            if (sortedString1.Equals(sortedString2))
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+
+        }
+   
+        //longest word in string 
+        
+        /// common items bettween two list
     }
 }
