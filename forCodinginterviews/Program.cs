@@ -1,31 +1,16 @@
-﻿using System;
+﻿using forCodinginterviews.LeetCode.Blind75_C_;
+using System;
 
 class Program
 {
     static void Main()
     {
-        Console.Write("Enter a string: ");
-        string inputString = Console.ReadLine();
 
-        string longestWord = FindLongestWord(inputString);
+         MergeStringAlternetively checkstring = new MergeStringAlternetively("ab", "pqrs");
+        
+         string alternativeMergedString  = checkstring.MergeAlternately();
 
-        Console.WriteLine("The longest word is: " + longestWord);
     }
 
-    static string FindLongestWord(string input)
-    {
-        string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-        string longestWord = "";
-
-        foreach (var word in words)
-        {
-            if (word.Length > longestWord.Length)
-            {
-                longestWord = word;
-            }
-        }
-
-        return longestWord;
-    }
 }
