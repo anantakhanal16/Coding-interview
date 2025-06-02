@@ -1,16 +1,16 @@
-﻿using forCodinginterviews.LeetCode.Blind75_C_;
-using System;
+﻿using System;
+using forCodinginterviews._2025_interview_prep.Questions.Easy;
+using forCodinginterviews.LeetCode.Blind75_C_;
 
 class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-
-         MergeStringAlternetively checkstring = new MergeStringAlternetively("ab", "pqrs");
-        
-         string alternativeMergedString  = checkstring.MergeAlternately();
+        var givenString = "Welcome to Csharp corner";
+        var result = RemoveDuplicateFromString.RemoveDuplicate(givenString);
+        Console.WriteLine($"Input String: {result}");
 
     }
-
-
 }
+
+
