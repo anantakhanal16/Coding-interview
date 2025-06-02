@@ -11,8 +11,6 @@
             }
 
         }
-
-        //implementation
         public class DerivedClass : Baseclass
         {
             public override void  Print()
@@ -22,8 +20,7 @@
         }   
     }
 
-    //create a astract class shape that cal area and perimeter
-    // create a class rect and square  taht implements that class
+
 
 
 }
