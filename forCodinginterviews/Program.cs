@@ -1,13 +1,14 @@
 ﻿using System;
 using forCodinginterviews._2025_interview_prep.Questions.Easy;
-using forCodinginterviews.LeetCode.Blind75_C_;
+using forCodinginterviews._2025_interview_prep.Questions.EasyStringBasedQuestions;
+
 
 class Program
 {
     public static void Main(string[] args)
     {
-        var givenString = "Welcome to Csharp corner";
-        var result = RemoveDuplicateFromString.RemoveDuplicate(givenString);
+        var givenString = "abcde";
+        var result = FindAllSubstring.AllSubstring(givenString);
         Console.WriteLine($"Input String: {result}");
 
     }
