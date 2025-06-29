@@ -24,13 +24,15 @@ namespace forCodinginterviews._2025_interview_prep.Questions.EasyStringBasedQues
                 string current = string.Empty;
                 for (int j = i; j < givenString.Length; j++)
                 {
-                    current += givenString[j]; // builds up substring
+                    current += givenString[j];
+
                     substrings.Add(current);
-                }
+                } 
             }
 
             return string.Join(",", substrings.Distinct());
         }
+
     }
 
 }
