@@ -1,7 +1,4 @@
-﻿using System;
-using forCodinginterviews._2025_interview_prep.Questions.ArrayBasedEasyQuestions;
-using forCodinginterviews._2025_interview_prep.Questions.Easy;
-using forCodinginterviews._2025_interview_prep.Questions.EasyStringBasedQuestions;
+﻿using forCodinginterviews._2025_interview_prep.Questions.ArrayBasedEasyQuestions;
 
 
 class Program
@@ -10,9 +7,8 @@ class Program
     {
         
         int[] arr = { 1, 2, 3,4,5 };
-
-        var result = LeftCircularRoatation.PerformArrayRotation(arr);
-        Console.WriteLine($"Input String: {result}");
+        var result = RightArrayRotation.PerformRightArrayRotation(arr);
+        Console.WriteLine($"result : {result}");
 
     }
 }
