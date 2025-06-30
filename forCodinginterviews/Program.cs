@@ -1,15 +1,14 @@
 ﻿using forCodinginterviews._2025_interview_prep.Questions.ArrayBasedEasyQuestions;
+using forCodinginterviews._2025_interview_prep.Questions.Others;
 
 
 class Program
 {
     public static void Main(string[] args)
     {
-        
-        int[] arr = { 1, 2, 3,4,5 };
-        var result = RightArrayRotation.PerformRightArrayRotation(arr);
+        var number = 6;
+        var result = PrimeNumber.IsPrime(number);
         Console.WriteLine($"result : {result}");
-
     }
 }
 

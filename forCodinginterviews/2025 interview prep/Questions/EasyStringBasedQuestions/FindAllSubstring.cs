@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic;
-
+﻿
 namespace forCodinginterviews._2025_interview_prep.Questions.EasyStringBasedQuestions
 {
     // Q.7: How to find all possible substring of a given string?
