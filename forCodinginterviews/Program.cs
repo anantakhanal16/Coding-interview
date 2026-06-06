@@ -5,15 +5,13 @@ class Program
 {
     public static void Main(string[] args)
     {
-        RunTest(new int[] { 2, 7, 11, 15 }, 9);
-        RunTest(new int[] { 3, 2, 4 }, 6);
-        RunTest(new int[] { 3, 3 }, 6);
-
+        RunTest(new int[] { 2, 7, 2, 15 });
+  
     }
 
-    public static void RunTest(int[] candies, int target)
+    public static void RunTest(int[] candies)
     {
-        var result = TwoSum.TwoSumOptimized(candies, target);
-      
+        var result = ContainsDuplicate.ContainsDuplicateSolution(candies);
+        Console.WriteLine($"Contains duplicate: {result}");
     }
 }

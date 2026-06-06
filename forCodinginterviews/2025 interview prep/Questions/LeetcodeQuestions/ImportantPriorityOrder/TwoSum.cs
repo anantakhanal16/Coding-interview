@@ -45,7 +45,7 @@ namespace forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.I
 
                 if (map.ContainsKey(complement))
                 {
-                    return new int[] { map[complement], i } ;
+                    return new int[] { map[complement], i };
                 }
                 if (!map.ContainsKey(nums[i]))
                 {
@@ -54,9 +54,5 @@ namespace forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.I
             }
             return new int[] { -1, -1 };
         }
-
-
-
-  
     }
 }
