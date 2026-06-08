@@ -5,13 +5,24 @@ class Program
 {
     public static void Main(string[] args)
     {
-        RunTest(new int[] { 2, 7, 2, 15 });
-  
+        RunTest();
+
     }
 
-    public static void RunTest(int[] candies)
+    public static void RunTest()
     {
-        var result = ContainsDuplicate.ContainsDuplicateSolution(candies);
-        Console.WriteLine($"Contains duplicate: {result}");
+        var testCases = new (string first, string second)[]
+       {
+            ("listen", "silent"),   // true
+            ("hello", "bello"),     // false
+            ("anagram", "nagaram"), // true
+            ("rat", "car")          // false
+       };
+
+        foreach (var test in testCases)
+        {
+            var result = ValidAnagram.ValidAnagramBruteForce(test.first, test.second);
+            Console.WriteLine($"{test.first}, {test.second} => {result}");
+        }
     }
 }
