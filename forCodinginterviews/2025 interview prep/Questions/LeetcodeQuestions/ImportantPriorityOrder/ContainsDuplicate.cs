@@ -1,25 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.ImportantPriorityOrder
+﻿namespace forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.ImportantPriorityOrder
 {
     public static class ContainsDuplicate
     {
         public static bool ContainsDuplicateSolution(int[] nums)
         {
-            Dictionary<int ,int> numbersTracker = new Dictionary<int ,int>();
+            HashSet<int> tracker = new HashSet<int>();
+
             for (int i = 0; i < nums.Length; i++)
             {
-                if (numbersTracker.ContainsKey(nums[i]))
+                if (tracker.Contains(nums[i]))
                 {
                     return true;
                 }
-                numbersTracker[nums[i]] = i;
+                tracker.Add(nums[i]);
+            }
+            return false;
+
+        }
+
+        //time 0(n)
+        //space 0(n)
+        public static bool ContainsDuplicate1(int[] nums)
+        {
+            HashSet<int> seen = new HashSet<int>();
+            foreach (int num in nums)
+            {
+                if (seen.Contains(num))
+                {
+                    return true;
+                }
+                seen.Add(num);
             }
             return false;
         }
+    
+
     }
 }
