@@ -1,4 +1,6 @@
-﻿using forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.Blind75;
+﻿
+using System;
+using forCodinginterviews._2025_interview_prep.Questions.LeetcodeQuestions.Blind75;
 
 class Program
 {
@@ -9,51 +11,68 @@ class Program
 
     public static void RunTest()
     {
-        var testCases = new string[]
+        var testCases = new (int[] Prices, int Expected)[]
         {
-            // Basic palindrome
-            "madam",
+            // 1. Basic example
+            (new[] { 7, 1, 5, 3, 6, 4 }, 5),
 
-            // Basic non-palindrome
-            "hello",
+            // 2. Prices always decrease
+            (new[] { 7, 6, 4, 3, 1 }, 0),
 
-            // Uppercase + lowercase
-            "Madam",
+            // 3. Buy at the beginning, sell at the end
+            (new[] { 1, 2, 3, 4, 5 }, 4),
 
-            // Spaces
-            "n u r",
+            // 4. Only two prices: profitable
+            (new[] { 1, 5 }, 4),
 
-            // Spaces + punctuation
-            "A man, a plan, a canal: Panama",
+            // 5. Only two prices: not profitable
+            (new[] { 5, 1 }, 0),
 
-            // Not a palindrome
-            "race a car",
+            // 6. Single day
+            (new[] { 5 }, 0),
 
-            // Single character
-            "a",
+            // 7. Empty array
+            (Array.Empty<int>(), 0),
 
-            // Empty string
-            "",
+            // 8. All prices are equal
+            (new[] { 3, 3, 3, 3 }, 0),
 
-            // Only spaces / special characters
-            "   ",
+            // 9. Minimum price occurs in the middle
+            (new[] { 5, 4, 1, 6, 3 }, 5),
 
-            // Numbers
-            "12321",
+            // 10. Minimum price occurs after the maximum
+            (new[] { 3, 2, 6, 1, 4 }, 4),
 
-            // Letters + numbers
-            "A1b2b1a",
+            // 11. Large profit
+            (new[] { 1, 100 }, 99),
 
-            // Same letters but different order
-            "abca"
+            // 12. Small price changes
+            (new[] { 2, 4, 1 }, 2),
+
+            // 13. Best profit occurs before the final day
+            (new[] { 1, 5, 2, 3 }, 4),
+
+            // 14. Lowest price at the end
+            (new[] { 5, 4, 3, 2, 1 }, 0),
+
+            // 15. Multiple possible profits
+            (new[] { 2, 1, 2, 1, 3 }, 2),
+
+            // 16. Buy at 2 and sell at 6
+            (new[] { 3, 2, 6, 1, 4 }, 4),
+
+            // 17. Larger values
+            (new[] { 100, 180, 260, 310, 40, 535, 695 }, 655)
         };
 
         foreach (var test in testCases)
         {
-            var result = ValidPalindrome.IsPalindromeoptimized(test);
+            var result = BestTimeToBuyandSellStocks.MaxProfitOptimized(test.Prices);
 
             Console.WriteLine(
-                $"s = \"{test}\" => {result}"
+                $"Prices = [{string.Join(", ", test.Prices)}] " +
+                $"=> Actual: {result}, Expected: {test.Expected}, " +
+                $"Passed: {result == test.Expected}"
             );
         }
     }
